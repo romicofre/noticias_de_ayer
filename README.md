@@ -6,12 +6,12 @@ Con este código, puede descargar tweets de una cuenta en particular. Luego carg
 
 
 Campos resultantes:
-text: string
-created_at: timestamp
-retweet_count: integer
-favorite_count: integer
-source: string
-account_name: string
+- text: string
+- created_at: timestamp
+- retweet_count: integer
+- favorite_count: integer
+- source: string
+- account_name: string
 
 
 Se puede particionar por created_at y clusterizar por account_name.
