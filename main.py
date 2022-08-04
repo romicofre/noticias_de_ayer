@@ -10,7 +10,7 @@ my_api_secret = os.environ["TW_API_SECRET"]
 account_name = os.environ["ACCOUNT_NAME"]
 
 bq_table_id = "dataset_test.noticias_de_ayer" # or use format: "project_id.dataset_id.table_id"
-
+since_id = "2022-01-03"
 
 def load_to_bq(pd_dataframe):
     client = bigquery.Client()
@@ -51,7 +51,7 @@ def hello_world(request):
     # search_query = "#covid19 -filter:retweets"
 
     # get tweets from the API
-    tweets = api.user_timeline(screen_name=account_name, since_id="2022-01-03")
+    tweets = api.user_timeline(screen_name=account_name, since_id=since_id)
 
     # store the API responses in a list
     tweets_copy = []

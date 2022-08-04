@@ -22,4 +22,6 @@ Para ejecutar este código se debe setear o cambiar estas variables:
 - TW_API_SECRET
 - ACCOUNT_NAME
 
-Y cambiar esta variable en el código: bq_table_id
+Y cambiar esta variable en el código: 
+- bq_table_id
+- since_id
